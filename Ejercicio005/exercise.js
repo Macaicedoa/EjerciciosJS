@@ -15,4 +15,4 @@ console.log(person1);
 console.log(person2);
 
 // The property `firstName` of the `person1` also changes because the copy of the object maps to the memory allocation of the firts object
-// It is a superficial copy of the object and does not create a completely new object. Any change in the copied object will change the original values;
+// It is a superficial copy of the object and does not create a completely new one. Any change in the copied object will change the original values;
