@@ -1,16 +1,21 @@
-function sortPeopleByAge(arr) {
-  let sortedArray = Array();
-  let sortedDummy = Array(); 
+// function sortPeopleByAge(arr) {
+//   let sortedArray = Array();
+//   let sortedDummy = Array(); 
   
-  arr.forEach((element,indx) => {
-    sortedDummy.push([element['age'],indx])
-  });
-  console.log(sortedDummy)
-  sortedDummy.sort();
-  sortedDummy.forEach(item=>{
-    sortedArray.push(arr[item[1]])
-  })
-  return sortedArray  
+//   arr.forEach((element,indx) => {
+//     sortedDummy.push([element['age'],indx])
+//   });
+//   console.log(sortedDummy)
+//   sortedDummy.sort();
+//   sortedDummy.forEach(item=>{
+//     sortedArray.push(arr[item[1]])
+//   })
+//   return sortedArray  
+// }
+
+function sortPeopleByAge(arr) {
+  arr.sort(function(a, b){return a.age - b.age});
+  return arr
 }
 
 const people = [
