@@ -4,7 +4,6 @@ function calculateAverageAge(persons) {
   edad_persons.push(person['age'])
   });
   const edad = 0;
-
   const sumatoria= edad_persons.reduce(
   (accumulator, currentValue) => accumulator + currentValue,
   edad,
