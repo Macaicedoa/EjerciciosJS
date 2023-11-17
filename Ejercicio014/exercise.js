@@ -1,7 +1,13 @@
 'use strict'
 
 function uncompletedNotes(notes) {
-  // ...
+  let noCompletado = Array();
+  notes.forEach(element => {
+    if(element.todos.some(item=>!item.done)){
+      noCompletado.push(element)
+    }
+  });  
+   return console.log(noCompletado)
 }
 
 const notes = [
