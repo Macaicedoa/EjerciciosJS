@@ -27,7 +27,7 @@ class Person {
   
   get fullName(){
     const fullName = this.firstName+' '+this.lastName;
-    return fullName
+    return fullName;
   }
 }
 
