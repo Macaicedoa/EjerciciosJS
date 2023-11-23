@@ -20,7 +20,7 @@ class Circle {
 class AreaCalculator {
   static calculate(figure){
     if(figure instanceof Square){
-      const area = figure.side*figure.side
+      const area = figure.side**2
       return area
     }else if(figure instanceof Rectangle){
       const area = figure.width*figure.height;
