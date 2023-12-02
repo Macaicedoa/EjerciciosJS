@@ -11,3 +11,4 @@ let myPromise = new Promise((resolve,reject)=>{
 myPromise
     .then((val)=>console.log(val))
     .catch((err)=>console.error(err))
+ 
