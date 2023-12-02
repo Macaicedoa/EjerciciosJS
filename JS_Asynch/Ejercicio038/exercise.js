@@ -20,6 +20,6 @@ firstPromise
         });
         secondPromise
         .then((user)=>console.log(user))
-        .catch(`Error`)
+        .catch((err)=>console.error(err))
     })
     .catch((err)=>console.error(err))
