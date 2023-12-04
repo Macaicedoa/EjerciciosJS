@@ -1,10 +1,10 @@
-const number = 15;
+const number = 8;
 
 let myPromise = new Promise((resolve,reject)=>{
         if(number > 10){
             resolve(number);
         }else{
-            reject(number);
+            reject("number is less than 10");
         }
 });
     
